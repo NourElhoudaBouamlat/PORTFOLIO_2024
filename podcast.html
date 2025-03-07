@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nour - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+    
+                <img src="logo.jpg" alt="Logo" class="logo">
+            
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="Mesprojets.html">Mes projets</a></li>                
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+        <p style="font-size: 32px; font-weight: bold; margin-bottom: 20px;">Podcast - L'info à l'antenne</p>
+<iframe width="70%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2049021500%3Fsecret_token%3Ds-7KzWAJUAGEL&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+</iframe>
+    </div>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+    <a href="https://soundcloud.com/manflow" title="Manflow" target="_blank" style="color: #cccccc; text-decoration: none;">Manflow</a> · <a href="https://soundcloud.com/manflow/cyberattaques-ia-armes-de-guerre-but-info/s-7KzWAJUAGEL" title="L&#x27;info à l&#x27;antenne - Ep1 Comment les cyberattaques et l&#x27;IA sont utilisées comme armes de guerre ?" target="_blank" style="color: #cccccc; text-decoration: none;">L&#x27;info à l&#x27;antenne - Ep1 Comment les cyberattaques et l&#x27;IA sont utilisées comme armes de guerre ?</a></div>
+
+</body>
+<script>
+    const btn= document.getElementById("btn")
+    btn.addEventListener("click", () => {
+        document.querySelector("header ul").classList.toggle("show")
+    })
+</script>
+</html>
