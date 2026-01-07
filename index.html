@@ -189,7 +189,22 @@
         </div>
 
     </section>
+<script>
+    const buttons = document.querySelectorAll('.toggle-details');
 
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const details = btn.nextElementSibling;
+            if(details.style.display === "none"){
+                details.style.display = "block";
+                btn.textContent = "Voir moins";
+            } else {
+                details.style.display = "none";
+                btn.textContent = "Voir plus";
+            }
+        });
+    });
+</script>
 
     <footer>
         &copy; 2026 Nour Elhouda Bouamlat. Tous droits réservés.<br>
